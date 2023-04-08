@@ -112,10 +112,6 @@ def execute_chatbot():
         # if the user typed 'exit', break out of the loop
         if message.lower() == 'exit':
             break
-        
-    # write the all_messages list to an excel file
-    df = pd.DataFrame(all_messages)
-    df.to_excel(f'chat_history.xlsx', index=False)
 
 # main function
 def main():
