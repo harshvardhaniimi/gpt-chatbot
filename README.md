@@ -24,3 +24,6 @@ If you run into any issues, please open an issue on the GitHub repo. Have fun!
 ## Next
 1. I am planning to add more personalities to talk to. If you have any suggestions, please open an issue on the GitHub repo.
 2. There will be a blog post on my website explaining how I built this and how to use it in complete detail. I will link it here when it is ready.
+
+## Pro-tip
+I've provided the prompts here in the text files. YOu can use them to talk to the personalities in ChatGPT web app as well. Specifically, I've found talking to the cat (`cat_prompt.txt`) to be much better when talking via GPT-4 than GPT-3.5-turbo, on which the current app is based. I don't have access to GPT-4 API yet, but I will update the app when I do.
