@@ -20,3 +20,7 @@
 The script uses the OpenAI API to generate text. The API is called with a prompt, which is the text that the model uses to generate the next text. The first prompt would depend on the personality you choose to talk to. Subsequent prompts are texts that the user has typed so far. The model generates the next text, and the user types the next text. This process is repeated until the user types `exit`.
 
 If you run into any issues, please open an issue on the GitHub repo. Have fun!
+
+## Next
+1. I am planning to add more personalities to talk to. If you have any suggestions, please open an issue on the GitHub repo.
+2. There will be a blog post on my website explaining how I built this and how to use it in complete detail. I will link it here when it is ready.
