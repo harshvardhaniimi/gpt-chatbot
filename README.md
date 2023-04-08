@@ -9,7 +9,7 @@
  1. Clone the repo or download the zip (See the green button on the top right)
  2. Install the requirements (`pip install -r requirements.txt`)
  3. Get OpenAI API keys from https://platform.openai.com/account/api-keys. Put them in the Python script called `openai_keys_user.py`.
- 4. Run the script `python3 gpt_chatbot.py`.
+ 4. Run the script `python3 app.py`.
  5. Choose a personality to talk to.
  6. Enjoy! Type `exit` to exit the chat. 
  7. To restart the chat, run the script again.
