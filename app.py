@@ -18,6 +18,10 @@ isha_prompt = open("isha_ai_therapist.txt", "r").readlines()[1:]
 # read in the text file clled cat_promot.txt as a string
 cat_prompt = open("cat_prompt.txt", "r").read()
 
+# prompt for a chatbot that is high on cannabis
+# read in the text file called highgpt_prompt.txt as a string
+highgpt_prompt = open("high_gpt.txt", "r").read()
+
 # prompt for anyone from history
 def personality(person):
     text2 = f"""
@@ -52,7 +56,7 @@ def execute_chatbot():
 
     # Choose which bot to talk to
     choice = input("Which bot would you like to talk to? \n 1. Isha, the AI therapist \n 2. Mahatma Gandhi \n 3. Cat \
-                   \n 4. Any historical figure  (you'll be asked who) \
+                   \n 4. Any historical figure  (you'll be asked who) \n 5. HighGPT (GPT but high on Cannabis)\
                    \n Type number of bot or 'exit' to quit:")
 
     if choice == "1" or choice.lower() == "isha":
@@ -83,6 +87,13 @@ def execute_chatbot():
             {"role": "user", "content": personality(person)}
         ]
         ai = person
+
+    if choice == "5" or choice.lower() == "highgpt":
+        all_messages = [
+            {"role": "system", "content": "You are a chatbot that is high on cannabis."},
+            {"role": "user", "content": highgpt_prompt}
+        ]
+        ai = "HighGPT"
     
     if choice.lower() == "exit":
         print("Goodbye!")
