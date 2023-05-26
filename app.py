@@ -1,9 +1,9 @@
 import openai
 import pandas as pd
-import openai_keys_user
+import openai_keys
 
 # set up the OpenAI API key
-openai.api_key = openai_keys_user.keys
+openai.api_key = openai_keys.keys
 
 
 # Gandhi Prompt
